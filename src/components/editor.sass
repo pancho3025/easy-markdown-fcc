@@ -1,0 +1,47 @@
+@use 'variables'
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap')
+
+.editor-container
+    background: variables.$container-back
+    max-width: 650px
+    min-width: 550px
+    font-family: 'Russo One'
+    height: 250px
+    overflow: hidden
+    margin: 15px
+    color: variables.$color
+    border-radius: 3px
+    box-shadow: variables.$caja-sombra
+
+.editor-header
+    box-shadow: variables.$caja-sombra
+    background: variables.$header
+    height: 15%
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.title
+    display: flex
+    font-size: 18px
+    padding: 7px
+    align-items: center
+    font-weight: 400
+    letter-spacing: 1px
+
+.icono
+    padding: 5px
+    font-size: 25px
+
+#editor
+    width: 100%
+    border: none
+    background: transparent
+    resize: none
+    height: 83%
+    padding-left: 9px
+    font-size: 15px
+
+    &:focus, &:active
+        border: none
+        outline: none
